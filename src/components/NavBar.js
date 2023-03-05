@@ -8,6 +8,7 @@ function NavBar() {
         <div className="">
           <a href="/" className="brand-logo left logospace">Portfolio</a>
           <ul className="">
+            <li><NavLink to="/">Aboutme</NavLink></li>
             <li><NavLink to="/resume">Resume</NavLink></li>
             <li><NavLink to="/showcase">Showcase</NavLink></li>
             <li><NavLink to="/showcase">ContactMe</NavLink></li>
