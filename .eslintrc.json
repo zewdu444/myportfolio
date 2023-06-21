@@ -25,14 +25,7 @@
     "no-shadow": "off",
     "react/prop-types": "off",
     "no-param-reassign": 0,
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "devDependencies": false,
-        "optionalDependencies": false,
-        "peerDependencies": false
-      }
-    ]
+    "import/no-extraneous-dependencies": "off"
   },
   "ignorePatterns": ["dist/", "build/"]
 }
