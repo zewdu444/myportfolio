@@ -1,13 +1,22 @@
-import 'primereact/resources/themes/lara-light-indigo/theme.css';
-import 'primereact/resources/primereact.min.css';
-import 'primeicons/primeicons.css';
-import 'primeflex/primeflex.css';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import ShowCase from './components/ShowCase';
+import Resume from './components/Resume';
+import Home from './components/Home';
+import ContactMe from './components/ContactMe';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hi portfolio</h1>
-    </div>
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/showcase" element={<ShowCase />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/contactme" element={<ContactMe />} />
+      </Routes>
+    </BrowserRouter>
+
   );
 }
 
