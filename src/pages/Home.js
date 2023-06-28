@@ -1,9 +1,10 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import { Card, Grid } from '@mui/material';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
+import {
+  Card, Grid, Button,
+} from '@mui/material';
+import TeckStack from '../components/TeckStack';
 
 function Home() {
   return (
@@ -32,6 +33,22 @@ function Home() {
             I am genuinely enthusiastic in software engineering,
             particularly full stack web development, cross-platform apps, and data science.
           </Typography>
+          <Button
+            variant="outlined"
+            sx={{
+              marginTop: '2%',
+              marginBottom: '5%',
+              maxWidth: { xs: '50%', sm: '80%', md: '40%' },
+              height: '50px',
+              fontSize: '20px',
+              fontWeight: 'bold',
+              border: '3px solid',
+            }}
+          >
+            Hire Me
+
+          </Button>
+
         </Grid>
         <Grid
           item
@@ -43,7 +60,9 @@ function Home() {
         >
           <Card
             sx={{
-              maxWidth: '80%',
+              maxWidth: '400px',
+              minWidth: '400px',
+              paddingLeft: '2%',
 
             }}
             elevation={3}
@@ -59,20 +78,7 @@ function Home() {
             >
               Tech Stack
             </Typography>
-            <CardMedia
-              sx={{ height: 140, width: '4%' }}
-              image="https://camo.githubusercontent.com/aeddc848275a1ffce386dc81c04541654ca07b2c43bbb8ad251085c962672aea/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6a6176617363726970742d2532333332333333302e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d6a617661736372697074266c6f676f436f6c6f723d253233463744463145"
-              title="green iguana"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Lizard
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over 6,000
-                species, ranging across all continents except Antarctica
-              </Typography>
-            </CardContent>
+            <TeckStack />
           </Card>
         </Grid>
       </Grid>

@@ -21,6 +21,8 @@ import TextSnippetIcon from '@mui/icons-material/TextSnippet';
 import SlideshowIcon from '@mui/icons-material/Slideshow';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 import { useNavigate } from 'react-router-dom';
+import { GitHub, LinkedIn, Twitter } from '@mui/icons-material';
+import { Stack } from '@mui/material';
 
 const drawerWidth = 240;
 
@@ -105,7 +107,13 @@ export default function MiniDrawer({ children }) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar position="fixed" open={open}>
+      <AppBar
+        position="fixed"
+        open={open}
+        sx={{
+
+        }}
+      >
         <Toolbar>
           <IconButton
             color="inherit"
@@ -119,9 +127,36 @@ export default function MiniDrawer({ children }) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap component="div" sx={{}}>
+          <Typography variant="h5" noWrap component="div" sx={{ flexGrow: 1 }}>
             Zewdu Erkyhun
           </Typography>
+          <Stack direction="row" spacing={1} sx={{ pr: '5px' }}>
+            <IconButton
+              aria-label="Github"
+              sx={{
+                color: 'white',
+                size: 'large',
+              }}
+            >
+              <GitHub />
+            </IconButton>
+            <IconButton
+              aria-label="LinkedIn"
+              sx={{
+                color: 'white',
+              }}
+            >
+              <LinkedIn />
+            </IconButton>
+            <IconButton
+              aria-label="Twitter"
+              sx={{
+                color: 'white',
+              }}
+            >
+              <Twitter />
+            </IconButton>
+          </Stack>
         </Toolbar>
       </AppBar>
 

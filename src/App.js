@@ -15,7 +15,24 @@ import options from './tsconfig/options';
 function App() {
   const [theme, setTheme] = useState('light');
   const Theme = createTheme({
+    typography: {
+      fontFamily: [
+        '"Apple Color Emoji"',
+      ].join(','),
+    },
     palette: {
+      primary: {
+        light: '#e3f2fd',
+        main: '#009688',
+        dark: '#002884',
+        contrastText: '#fff',
+      },
+      secondary: {
+        light: '#e3f2fd',
+        main: '#1de9b6',
+        dark: '#ba000d',
+        contrastText: '#000',
+      },
       mode: theme,
     },
   });
@@ -55,10 +72,12 @@ function App() {
             aria-label="LightMode"
             onClick={lightHandler}
             sx={{
-              position: 'absolute',
+
+              position: 'fixed',
               bottom: 16,
               right: 16,
             }}
+
           >
             <LightModeIcon />
           </Fab>
