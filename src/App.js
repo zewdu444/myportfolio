@@ -17,19 +17,23 @@ function App() {
   const Theme = createTheme({
     typography: {
       fontFamily: [
-        '"Apple Color Emoji"',
+        'Roboto',
       ].join(','),
     },
     palette: {
+      background: {
+        default: theme === 'light' ? '#F4F5FA' : '#28243D',
+        paper: theme === 'light' ? '#fff' : '#1F1A3D',
+      },
       primary: {
         light: '#e3f2fd',
-        main: '#009688',
+        main: '#9155FD',
         dark: '#002884',
         contrastText: '#fff',
       },
       secondary: {
         light: '#e3f2fd',
-        main: '#1de9b6',
+        main: '#f50057',
         dark: '#ba000d',
         contrastText: '#000',
       },

@@ -111,7 +111,7 @@ export default function MiniDrawer({ children }) {
         position="fixed"
         open={open}
         sx={{
-
+          boxShadow: '1px',
         }}
       >
         <Toolbar>
