@@ -1,5 +1,5 @@
 import {
-  Grid, Typography, Button, Card, CardContent, CardActions, Stack,
+  Grid, Typography, Button, Card, CardContent, CardActions, Stack, Chip,
 } from '@mui/material';
 import React from 'react';
 import { bootstrap, javascript } from '../img';
@@ -30,6 +30,22 @@ function ShowCase() {
               Lizards are a widespread group of squamate reptiles, with over 6,000
               species, ranging across all continents except Antarctica
             </Typography>
+            <Stack
+              direction="row"
+              sx={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                ml: -0.5,
+                mt: 1,
+                mb: -2,
+              }}
+              spacing={1}
+            >
+              <Chip label="Javascript" color="primary" variant="outlined" sx={{ mb: 1 }} />
+              <Chip label="React" color="primary" variant="outlined" sx={{ mb: 1 }} />
+              <Chip label="Ruby on Rails" color="primary" variant="outlined" sx={{ mb: 1 }} />
+              <Chip label="SQL" color="primary" variant="outlined" sx={{ mb: 1 }} />
+            </Stack>
           </CardContent>
           <CardActions>
             <Button size="small">Share</Button>
@@ -54,6 +70,23 @@ function ShowCase() {
               Lizards are a widespread group of squamate reptiles, with over 6,000
               species, ranging across all continents except Antarctica
             </Typography>
+            <Stack
+              direction="row"
+              sx={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                ml: -0.5,
+                mt: 1,
+                mb: -2,
+              }}
+              spacing={1}
+            >
+
+              <Chip label="Javascript" color="primary" variant="outlined" sx={{ mb: 1 }} />
+              <Chip label="React" color="primary" variant="outlined" sx={{ mb: 1 }} />
+              <Chip label="Ruby on Rails" color="primary" variant="outlined" sx={{ mb: 1 }} />
+              <Chip label="SQL" color="primary" variant="outlined" sx={{ mb: 1 }} />
+            </Stack>
           </CardContent>
           <CardActions>
             <Button size="small">Share</Button>
@@ -78,6 +111,23 @@ function ShowCase() {
               Lizards are a widespread group of squamate reptiles, with over 6,000
               species, ranging across all continents except Antarctica
             </Typography>
+            <Stack
+              direction="row"
+              sx={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                ml: -0.5,
+                mt: 1,
+                mb: -2,
+              }}
+              spacing={1}
+            >
+
+              <Chip label="Javascript" color="primary" variant="outlined" sx={{ mb: 1 }} />
+              <Chip label="React" color="primary" variant="outlined" sx={{ mb: 1 }} />
+              <Chip label="Ruby on Rails" color="primary" variant="outlined" sx={{ mb: 1 }} />
+              <Chip label="SQL" color="primary" variant="outlined" sx={{ mb: 1 }} />
+            </Stack>
           </CardContent>
           <CardActions>
             <Button size="small">Share</Button>
@@ -102,6 +152,23 @@ function ShowCase() {
               Lizards are a widespread group of squamate reptiles, with over 6,000
               species, ranging across all continents except Antarctica
             </Typography>
+            <Stack
+              direction="row"
+              sx={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                ml: -0.5,
+                mt: 1,
+                mb: -2,
+              }}
+              spacing={1}
+            >
+
+              <Chip label="Javascript" color="primary" variant="outlined" sx={{ mb: 1 }} />
+              <Chip label="React" color="primary" variant="outlined" sx={{ mb: 1 }} />
+              <Chip label="Ruby on Rails" color="primary" variant="outlined" sx={{ mb: 1 }} />
+              <Chip label="SQL" color="primary" variant="outlined" sx={{ mb: 1 }} />
+            </Stack>
           </CardContent>
           <CardActions>
             <Button size="small">Share</Button>
