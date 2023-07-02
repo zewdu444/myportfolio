@@ -86,11 +86,48 @@ function Resume() {
         <Stack sx={{ pb: '1%' }}>
           <Card sx={{ }}>
             <CardContent>
-              <Typography gutterBottom variant="h5" component="div" textAlign="center">
-                ZEWDU ANLEY
+              <Typography gutterBottom variant="h5" component="div">
+                SKILLS
               </Typography>
-              <Typography variant="body1" color="text.secondary" textAlign="center">
-                Full Stack Web Developer and Data Analyist
+              <Typography component="div" color="text.secondary">
+                <Typography variant="h6" component="span" color="text.secondary">
+                  Front-End:&nbsp;
+                </Typography>
+                <Typography variant="body1" component="span" color="text.secondary">
+                  JavaScript, React, Redux, VueJS, Svelte,  HTML5, CSS3, Quasar
+                </Typography>
+              </Typography>
+              <Typography component="div" color="text.secondary">
+                <Typography variant="h6" component="span" color="text.secondary">
+                  Back-End:&nbsp;
+                </Typography>
+                <Typography variant="body1" component="span" color="text.secondary">
+                  Django, PHP, My SQL, PostgreSQL,  MongoDB, SQLite, Ruby On Rails
+                </Typography>
+              </Typography>
+              <Typography component="div" color="text.secondary">
+                <Typography variant="h6" component="span" color="text.secondary">
+                  Tools and Methods: &nbsp;
+                </Typography>
+                <Typography variant="body1" component="span" color="text.secondary">
+                  Git, GitHub, Firebase, Responsive Development, TDD, Chrome Dev Tools, Postman
+                </Typography>
+              </Typography>
+              <Typography component="div" color="text.secondary">
+                <Typography variant="h6" component="span" color="text.secondary">
+                  Additional Skills: &nbsp;
+                </Typography>
+                <Typography variant="body1" component="span" color="text.secondary">
+                  NLP, machine learning, TensorFlow, Panda, Pytorch, and embedded systems
+                </Typography>
+              </Typography>
+              <Typography component="div" color="text.secondary">
+                <Typography variant="h6" component="span" color="text.secondary">
+                  Professional: &nbsp;
+                </Typography>
+                <Typography variant="body1" component="span" color="text.secondary">
+                  Remote, Pair programming, Teamwork, Mentoring
+                </Typography>
               </Typography>
             </CardContent>
           </Card>
