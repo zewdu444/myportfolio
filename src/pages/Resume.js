@@ -3,13 +3,21 @@ import {
 } from '@mui/material';
 import DownloadIcon from '@mui/icons-material/Download';
 import React from 'react';
+import ScienceIcon from '@mui/icons-material/Science';
+import BuildIcon from '@mui/icons-material/Build';
+import SchoolIcon from '@mui/icons-material/School';
 import { zewdu } from '../img';
 
 function Resume() {
   return (
     <Stack sx={{
       display: 'flex',
-      flexDirection: 'row',
+      flexDirection: {
+        xs: 'column',
+        sm: 'column',
+        md: 'row',
+        xl: 'row',
+      },
     }}
     >
       <Stack sx={{
@@ -48,7 +56,7 @@ function Resume() {
             </CardContent>
           </Card>
         </Stack>
-        <Stack sx={{ width: '100%' }}>
+        <Stack sx={{ width: '100%', pb: '2%' }}>
           <Card sx={{ }}>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div" textAlign="center">
@@ -88,7 +96,8 @@ function Resume() {
           <Card sx={{ }}>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
-                SKILLS
+                SKILLS&nbsp;&nbsp;
+                <BuildIcon color="primary" />
               </Typography>
               <Typography component="div" color="text.secondary">
                 <Typography variant="h6" component="span" color="text.secondary">
@@ -137,7 +146,14 @@ function Resume() {
           <Card sx={{ }}>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
-                EXPERIENCE
+                EXPERIENCE &nbsp;&nbsp;
+                <ScienceIcon
+                  color="primary"
+                  sx={{
+                    fontSize: '2rem',
+                    mb: '-0.4rem',
+                  }}
+                />
               </Typography>
               <Stack sx={{
                 pb: '1%',
@@ -328,7 +344,14 @@ function Resume() {
           <Card sx={{ }}>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
-                EDUCATION
+                EDUCATION &nbsp;  &nbsp;
+                <SchoolIcon
+                  color="primary"
+                  sx={{
+                    fontSize: '2rem',
+                    mb: '-0.4rem',
+                  }}
+                />
               </Typography>
               <Stack sx={{
                 pb: '1%',
@@ -431,12 +454,11 @@ function Resume() {
           sx={{
             display: 'flex',
             alignSelf: 'center',
-            width: '15%',
+            width: '250px',
           }}
           endIcon={<DownloadIcon />}
         >
           Download Resume
-
         </Button>
       </Stack>
     </Stack>
