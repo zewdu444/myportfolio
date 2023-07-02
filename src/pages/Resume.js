@@ -1,6 +1,7 @@
 import {
-  Stack, Typography, Card, CardContent, Link,
+  Stack, Typography, Card, CardContent, Link, Button,
 } from '@mui/material';
+import DownloadIcon from '@mui/icons-material/Download';
 import React from 'react';
 import { zewdu } from '../img';
 
@@ -135,11 +136,190 @@ function Resume() {
         <Stack sx={{ pb: '1%' }}>
           <Card sx={{ }}>
             <CardContent>
-              <Typography gutterBottom variant="h5" component="div" textAlign="center">
-                ZEWDU ANLEY
+              <Typography gutterBottom variant="h5" component="div">
+                EXPERIENCE
               </Typography>
-              <Typography variant="body1" color="text.secondary" textAlign="center">
-                Full Stack Web Developer and Data Analyist
+              <Stack sx={{
+                pb: '1%',
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+              }}
+              >
+                <Typography variant="h6" component="span" color="text.secondary">
+                  HIGHLIGHTED PERSONAL PROJECTS &nbsp;
+                </Typography>
+                <Typography
+                  variant="body1"
+                  color="text.secondary"
+                  sx={{
+                    pr: '5%',
+                  }}
+                >
+                  Remote
+                </Typography>
+              </Stack>
+              <Stack sx={{
+                pb: '1%',
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+              }}
+              >
+                <Typography variant="h6" component="span" color="text.secondary">
+                  Full Stack Web Development Student and Mentor &nbsp;
+                </Typography>
+                <Typography
+                  variant="body1"
+                  color="text.secondary"
+                  sx={{
+                    pr: '5%',
+                  }}
+                >
+                  November 2022 – Present
+                </Typography>
+              </Stack>
+              <Typography variant="body1" component="div" color="text.secondary" width="50%">
+                Mastering intermediate and advanced topics in full-stack development
+                (including Git and DS&A challenges) while building multiple full-stack projects
+                independently and via pair programming.
+
+              </Typography>
+              <Typography component="div" color="text.secondary">
+                <Typography variant="h6" component="span" color="text.secondary">
+                  Budget app:  &nbsp;
+                </Typography>
+                <Typography variant="body2" component="div" color="text.secondary" width="50%">
+                  A mobile web application that allows you to keep a budget.
+                </Typography>
+                <Typography variant="body2" component="div" color="text.secondary" width="50%" pl="5px">
+                  - Built with: Ruby on Rails, CSS3, and Render.
+                </Typography>
+              </Typography>
+              <Typography component="div" color="text.secondary">
+                <Typography variant="h6" component="span" color="text.secondary">
+                  Awesome TodoList app:  &nbsp;
+                </Typography>
+                <Typography variant="body2" component="div" color="text.secondary" width="50%">
+                  A cross-platform to-do list application used to track daily activities.
+                </Typography>
+                <Typography variant="body2" component="div" color="text.secondary" width="50%" pl="5px">
+                  - Built with: VueJS, Quasar, and Firebase.
+                </Typography>
+              </Typography>
+              <Typography component="div" color="text.secondary">
+                <Typography variant="h6" component="span" color="text.secondary">
+                  Countries Information:  &nbsp;
+                </Typography>
+                <Typography variant="body2" component="div" color="text.secondary" width="50%">
+                  A Mobile web application offers information about countries such as their
+                  population, capital city, flag, and other relevant details.
+                </Typography>
+                <Typography variant="body2" component="div" color="text.secondary" width="50%" pl="5px">
+                  - Built with: React, Redux, MUI, and External API
+                </Typography>
+              </Typography>
+              <Stack sx={{
+                pb: '1%',
+                pt: '1%',
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+              }}
+              >
+                <Typography variant="h6" component="span" color="text.secondary">
+                  MICROVERSE  &nbsp;
+                </Typography>
+                <Typography
+                  variant="body1"
+                  color="text.secondary"
+                  sx={{
+                    pr: '5%',
+                  }}
+                >
+                  Remote
+                </Typography>
+              </Stack>
+              <Stack sx={{
+                pb: '1%',
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+              }}
+              >
+                <Typography variant="h6" component="span" color="text.secondary">
+                  Mentor (Volunteer)  &nbsp;
+                </Typography>
+                <Typography
+                  variant="body1"
+                  color="text.secondary"
+                  sx={{
+                    pr: '5%',
+                  }}
+                >
+                  January 2023 – present
+                </Typography>
+              </Stack>
+              <Typography variant="body2" component="div" color="text.secondary" width="50%" pl="5px">
+                - Mentored junior web developers, providing technical support through code reviews.
+              </Typography>
+              <Typography variant="body2" component="div" color="text.secondary" width="50%" pl="5px">
+                - Proposed improvements to code organization to improve code quality
+                and overall performance.
+              </Typography>
+
+              <Stack sx={{
+                pb: '1%',
+                pt: '1%',
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+              }}
+              >
+                <Typography variant="h6" component="span" color="text.secondary">
+                  BGI Ethiopia   &nbsp;
+                </Typography>
+                <Typography
+                  variant="body1"
+                  color="text.secondary"
+                  sx={{
+                    pr: '5%',
+                  }}
+                >
+                  Addis Ababa, Ethiopia
+                </Typography>
+              </Stack>
+              <Stack sx={{
+                pb: '1%',
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+              }}
+              >
+                <Typography variant="h6" component="span" color="text.secondary">
+                  Team Leader in CMMS,   &nbsp;
+                </Typography>
+                <Typography
+                  variant="body1"
+                  color="text.secondary"
+                  sx={{
+                    pr: '5%',
+                  }}
+                >
+                  May 2018 – November 2022 (5 years)
+                </Typography>
+              </Stack>
+              <Typography variant="body2" component="div" color="text.secondary" width="50%" pl="5px">
+                - Monitored system performance, availability, and user experience.
+              </Typography>
+              <Typography variant="body2" component="div" color="text.secondary" width="50%" pl="5px">
+                - coordinated and distributed all tasks to team members.
               </Typography>
             </CardContent>
           </Card>
@@ -147,15 +327,117 @@ function Resume() {
         <Stack sx={{ pb: '1%' }}>
           <Card sx={{ }}>
             <CardContent>
-              <Typography gutterBottom variant="h5" component="div" textAlign="center">
-                ZEWDU ANLEY
+              <Typography gutterBottom variant="h5" component="div">
+                EDUCATION
               </Typography>
-              <Typography variant="body1" color="text.secondary" textAlign="center">
-                Full Stack Web Developer and Data Analyist
+              <Stack sx={{
+                pb: '1%',
+                pt: '1%',
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+              }}
+              >
+                <Typography variant="h6" component="span" color="text.secondary">
+                  MICROVERSE  &nbsp;
+                </Typography>
+                <Typography
+                  variant="body1"
+                  color="text.secondary"
+                  sx={{
+                    pr: '5%',
+                  }}
+                >
+                  Remote
+                </Typography>
+              </Stack>
+              <Stack sx={{
+                pb: '1%',
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+              }}
+              >
+                <Typography variant="h6" component="span" color="text.secondary">
+                  Remote Full Stack Web Development Program, Full Time  &nbsp;
+                </Typography>
+                <Typography
+                  variant="body1"
+                  color="text.secondary"
+                  sx={{
+                    pr: '5%',
+                  }}
+                >
+                  November, 2022 – present
+                </Typography>
+              </Stack>
+              <Typography variant="body2" component="div" color="text.secondary" width="50%" pl="5px">
+                - I spent 1300+ hours mastering algorithms, data structures, and full-stack
+                development while simultaneously developing projects with JavaScript,
+                Ruby On Rais, React, and Redux.
+
+              </Typography>
+              <Typography variant="body2" component="div" color="text.secondary" width="50%" pl="5px">
+                - Developed skills in remote pair programming using GitHub, industry-standard
+                git-flow, and daily standups to communicate and collaborate with international
+                remote developers.
+              </Typography>
+
+              <Stack sx={{
+                pb: '1%',
+                pt: '1%',
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+              }}
+              >
+                <Typography variant="h6" component="span" color="text.secondary">
+                  Addis Ababa Institution of Technology   &nbsp;
+                </Typography>
+              </Stack>
+              <Stack sx={{
+                pb: '1%',
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+              }}
+              >
+                <Typography variant="h6" component="span" color="text.secondary">
+                  BSc, Electrical and Computer Engineering    &nbsp;
+                </Typography>
+                <Typography
+                  variant="body1"
+                  color="text.secondary"
+                  sx={{
+                    pr: '5%',
+                  }}
+                >
+                  Jan 2011 –July 2016
+                </Typography>
+              </Stack>
+              <Typography variant="body2" component="div" color="text.secondary" width="50%" pl="5px">
+                - Bachelor Thesis: Android application-controlled Bluetooth
+                LED Display (C++ and Java).
               </Typography>
             </CardContent>
           </Card>
         </Stack>
+        <Button
+          variant="contained"
+          sx={{
+            display: 'flex',
+            alignSelf: 'center',
+            width: '15%',
+          }}
+          endIcon={<DownloadIcon />}
+        >
+          Download Resume
+
+        </Button>
       </Stack>
     </Stack>
   );
