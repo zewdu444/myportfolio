@@ -457,6 +457,9 @@ function Resume() {
             width: '250px',
           }}
           endIcon={<DownloadIcon />}
+          onClick={() => {
+            window.open('https://docs.google.com/document/d/1U2dezVJTFk2IE4Z4aBfCTajVcD5x_FfIj8OK9FBqIi4/edit?usp=sharing');
+          }}
         >
           Download Resume
         </Button>
