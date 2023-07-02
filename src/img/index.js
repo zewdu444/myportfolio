@@ -15,6 +15,7 @@ import redux from './redux.png';
 import rubyonrails from './rubyonrails.png';
 import vuejs from './vuejs.png';
 import webpack from './webpack.png';
+import zewdu from './zewdu.jpg';
 
 export {
   javascript,
@@ -34,4 +35,5 @@ export {
   rubyonrails,
   vuejs,
   webpack,
+  zewdu,
 };
