@@ -35,7 +35,14 @@ function ShowCase() {
       >
 
         <Grid item xs={2} sm={3} md={3}>
-          <Card sx={{ maxHeight: 410, maxWidth: 400, minHeight: 410 }}>
+          <Card sx={{
+            maxHeight: {
+              xs: 500, sm: 410, md: 410, xl: 410,
+            },
+            maxWidth: 400,
+            minHeight: 410,
+          }}
+          >
             <Stack sx={{
               display: 'flex',
               flexDirection: 'column',
@@ -86,7 +93,14 @@ function ShowCase() {
           </Card>
         </Grid>
         <Grid item xs={2} sm={3} md={3}>
-          <Card sx={{ maxHeight: 410, maxWidth: 400, minHeight: 410 }}>
+          <Card sx={{
+            maxHeight: {
+              xs: 500, sm: 410, md: 410, xl: 410,
+            },
+            maxWidth: 400,
+            minHeight: 410,
+          }}
+          >
             <Stack sx={{
               display: 'flex',
               flexDirection: 'column',
@@ -143,7 +157,14 @@ function ShowCase() {
           </Card>
         </Grid>
         <Grid item xs={2} sm={3} md={3}>
-          <Card sx={{ maxHeight: 410, maxWidth: 400, minHeight: 410 }}>
+          <Card sx={{
+            maxHeight: {
+              xs: 500, sm: 410, md: 410, xl: 410,
+            },
+            maxWidth: 400,
+            minHeight: 410,
+          }}
+          >
             <Stack sx={{
               display: 'flex',
               flexDirection: 'column',
@@ -200,7 +221,14 @@ function ShowCase() {
           </Card>
         </Grid>
         <Grid item xs={2} sm={3} md={3}>
-          <Card sx={{ maxHeight: 410, maxWidth: 400, minHeight: 410 }}>
+          <Card sx={{
+            maxHeight: {
+              xs: 500, sm: 410, md: 410, xl: 410,
+            },
+            maxWidth: 400,
+            minHeight: 410,
+          }}
+          >
             <Stack sx={{
               display: 'flex',
               flexDirection: 'column',
@@ -247,7 +275,14 @@ function ShowCase() {
           </Card>
         </Grid>
         <Grid item xs={2} sm={3} md={3}>
-          <Card sx={{ maxHeight: 410, maxWidth: 400, minHeight: 410 }}>
+          <Card sx={{
+            maxHeight: {
+              xs: 500, sm: 410, md: 410, xl: 410,
+            },
+            maxWidth: 400,
+            minHeight: 410,
+          }}
+          >
             <Stack sx={{
               display: 'flex',
               flexDirection: 'column',
@@ -301,7 +336,14 @@ function ShowCase() {
           </Card>
         </Grid>
         <Grid item xs={2} sm={3} md={3}>
-          <Card sx={{ maxHeight: 410, maxWidth: 400, minHeight: 410 }}>
+          <Card sx={{
+            maxHeight: {
+              xs: 500, sm: 410, md: 410, xl: 410,
+            },
+            maxWidth: 400,
+            minHeight: 410,
+          }}
+          >
             <Stack sx={{
               display: 'flex',
               flexDirection: 'column',
@@ -357,7 +399,14 @@ function ShowCase() {
           </Card>
         </Grid>
         <Grid item xs={2} sm={3} md={3}>
-          <Card sx={{ maxHeight: 410, maxWidth: 400, minHeight: 410 }}>
+          <Card sx={{
+            maxHeight: {
+              xs: 500, sm: 410, md: 410, xl: 410,
+            },
+            maxWidth: 400,
+            minHeight: 410,
+          }}
+          >
             <Stack sx={{
               display: 'flex',
               flexDirection: 'column',
@@ -413,7 +462,14 @@ function ShowCase() {
           </Card>
         </Grid>
         <Grid item xs={2} sm={3} md={3}>
-          <Card sx={{ maxHeight: 410, maxWidth: 400, minHeight: 410 }}>
+          <Card sx={{
+            maxHeight: {
+              xs: 500, sm: 410, md: 410, xl: 410,
+            },
+            maxWidth: 400,
+            minHeight: 410,
+          }}
+          >
             <Stack sx={{
               display: 'flex',
               flexDirection: 'column',

@@ -1,10 +1,33 @@
 import {
-  Card, Stack, Typography, FormControl, TextField, Button,
+  Card, Stack, Typography, TextField, Input,
 } from '@mui/material';
-import React from 'react';
+import React, { useState } from 'react';
 import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
 
 function ContactMe() {
+  const [fullName, setFullName] = useState('');
+  const [emailAddress, setEmailAddress] = useState('');
+  const [message, setMessage] = useState('');
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const formData = new FormData(form);
+    const formJson = Object.fromEntries(formData.entries());
+    fetch('https://formspree.io/f/myyqgarw', {
+      method: 'POST',
+      body: JSON.stringify(formJson),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Failed to submit the form.');
+        }
+      })
+      .catch((error) => error);
+
+    setFullName('');
+    setEmailAddress('');
+    setMessage('');
+  };
   return (
     <Stack>
       <Card sx={{
@@ -41,36 +64,55 @@ function ContactMe() {
           marginX: 'auto',
         }}
         >
-          <FormControl>
-            <TextField
-              helperText=" "
-              label="Full Name"
-              required
-            />
-            <TextField
-              helperText=" "
-              label="Email address"
-              required
-            />
-            <TextField
-              helperText=" "
-              multiline
-              rows={4}
-              label="Message"
 
-            />
-            <Button
-              sx={{
-                marginTop: '5%',
-                height: '40px',
-              }}
-              variant="contained"
-            >
-              Get In Touch
+          <form onSubmit={handleSubmit}>
+            <Stack>
+              <TextField
+                helperText=" "
+                label="Full Name"
+                required
+                name="fullName"
+                onChange={(e) => setFullName(e.target.value)}
+                value={fullName}
+              />
+              <TextField
+                helperText=" "
+                label="Email address"
+                required
+                name="emailAddress"
+                onChange={(e) => setEmailAddress(e.target.value)}
+                value={emailAddress}
+              />
+              <TextField
+                helperText=" "
+                multiline
+                rows={4}
+                label="Message"
+                name="message"
+                onChange={(e) => setMessage(e.target.value)}
+                value={message}
+              />
+              <Input
+                sx={{
+                  marginTop: '5%',
+                  height: '40px',
+                  color: 'white',
+                  backgroundColor: 'primary.main',
+                  borderRadius: '5px',
+                  border: 'none',
+                  '&:hover': {
+                    transform: 'scale(1.1)',
 
-            </Button>
+                  },
 
-          </FormControl>
+                }}
+                disableUnderline
+                variant="contained"
+                type="submit"
+                value="Get In Touch"
+              />
+            </Stack>
+          </form>
         </Stack>
       </Card>
 
