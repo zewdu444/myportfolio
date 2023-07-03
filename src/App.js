@@ -13,7 +13,7 @@ import MiniDrawer from './pages/DrawerMenu';
 import options from './tsconfig/options';
 
 function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
   const Theme = createTheme({
     typography: {
       fontFamily: [

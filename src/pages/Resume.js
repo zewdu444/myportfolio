@@ -2,23 +2,37 @@ import {
   Stack, Typography, Card, CardContent, Link, Button,
 } from '@mui/material';
 import DownloadIcon from '@mui/icons-material/Download';
-import React from 'react';
+import React, { useState } from 'react';
 import ScienceIcon from '@mui/icons-material/Science';
 import BuildIcon from '@mui/icons-material/Build';
 import SchoolIcon from '@mui/icons-material/School';
+import { useNavigate } from 'react-router-dom';
 import { zewdu } from '../img';
 
 function Resume() {
+  const [scrollDown, setScrollDown] = useState(0);
+  const navigate = useNavigate();
+  const handleScroll = (e) => {
+    setScrollDown(scrollDown + e.deltaY);
+    if (scrollDown > 2000) {
+      navigate('/showcase', { replace: true });
+    }
+    if (scrollDown < -800) {
+      navigate('/', { replace: true });
+    }
+  };
   return (
-    <Stack sx={{
-      display: 'flex',
-      flexDirection: {
-        xs: 'column',
-        sm: 'column',
-        md: 'row',
-        xl: 'row',
-      },
-    }}
+    <Stack
+      sx={{
+        display: 'flex',
+        flexDirection: {
+          xs: 'column',
+          sm: 'column',
+          md: 'row',
+          xl: 'row',
+        },
+      }}
+      onWheel={handleScroll}
     >
       <Stack sx={{
         disply: 'flex',

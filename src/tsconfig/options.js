@@ -4,13 +4,11 @@ const options = {
     color: {
       value: 'white',
     },
-
     image: '',
-    position: '2',
+    position: '',
     repeat: '',
     size: '',
     opacity: 1,
-    zIndex: -2,
   },
   backgroundMask: {
     composite: 'destination-out',

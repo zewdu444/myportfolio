@@ -3,11 +3,21 @@ import {
 } from '@mui/material';
 import React, { useState } from 'react';
 import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
+import { useNavigate } from 'react-router-dom';
 
 function ContactMe() {
+  const [scrollDown, setScrollDown] = useState(0);
   const [fullName, setFullName] = useState('');
   const [emailAddress, setEmailAddress] = useState('');
   const [message, setMessage] = useState('');
+  const navigate = useNavigate();
+  const handleScroll = (e) => {
+    setScrollDown(scrollDown + e.deltaY);
+    if (scrollDown < -800) {
+      navigate('/showcase', { replace: true });
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -29,7 +39,7 @@ function ContactMe() {
     setMessage('');
   };
   return (
-    <Stack>
+    <Stack onWheel={handleScroll}>
       <Card sx={{
         width: { xs: '100%', sm: '80%', md: '40%' },
         alignSelf: 'center',

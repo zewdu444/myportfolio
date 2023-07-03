@@ -1,20 +1,33 @@
 import {
   Grid, Typography, Button, Card, CardContent, CardActions, Stack, Chip,
 } from '@mui/material';
-import React from 'react';
+import React, { useState } from 'react';
 import RocketIcon from '@mui/icons-material/Rocket';
+import { useNavigate } from 'react-router-dom';
 import {
   conference, leaderboard, countries, awesome, budget, relief, rocket, bookstore,
 } from '../img';
 
 function ShowCase() {
+  const [scrollDown, setScrollDown] = useState(0);
+  const navigate = useNavigate();
+  const handleScroll = (e) => {
+    setScrollDown(scrollDown + e.deltaY);
+    if (scrollDown > 2000) {
+      navigate('/contactme', { replace: true });
+    }
+    if (scrollDown < -800) {
+      navigate('/resume', { replace: true });
+    }
+  };
   return (
-    <Stack>
+    <Stack onWheel={handleScroll}>
       <Typography
         gutterBottom
         variant="h4"
         component="span"
         textAlign="center"
+
       >
         My Projects &nbsp;
         <RocketIcon
@@ -114,7 +127,6 @@ function ShowCase() {
               </Typography>
               <Typography variant="body2" color="text.secondary">
                 A leaderboard website displays scores submitted by different players.
-                It also allows to add score and data were preserved data external API
               </Typography>
               <Stack
                 direction="row"
@@ -178,7 +190,7 @@ function ShowCase() {
               </Typography>
               <Typography variant="body2" color="text.secondary">
                 A Mobile web application offers information about countries such as their
-                population, capital city, flag, and other relevant details.
+                population, capital city, and flag.
               </Typography>
               <Stack
                 direction="row"
@@ -356,7 +368,7 @@ function ShowCase() {
                 Counseling  Application
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                Counseling Application allows clients to create therapist profiles and
+                Counseling Application allows clinets to
                 schedule appointments with their preferred therapists.
               </Typography>
               <Stack
@@ -420,8 +432,7 @@ function ShowCase() {
               </Typography>
               <Typography variant="body2" color="text.secondary">
                 A web application for a company that provides commercial and scientific
-                space travel services. The application will allow users to book rockets
-                and join selected space missions.
+                space travel services.
               </Typography>
               <Stack
                 direction="row"
