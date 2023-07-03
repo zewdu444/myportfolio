@@ -5,20 +5,19 @@
 </div>
 # 🧑‍💻 My Portfolio <a name="about-project"></a>
 
-<p> 😄  This repository serves as my personal portfolio and is developed by React and Prime React. It contains information about me, my resume, and my works. 🧑</p>
+<p> 😄  This repository serves as my personal portfolio and is developed by React and MUI. It contains information about me, my resume, and my works. 🧑</p>
 
 ## 🛠 Built With <a name="built-with"> </a>
 
-> HTML 5 , css3, javascript ES6,
+> React, Redux, and  javascript ES6,
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> React, webpack , babel and Prime React
+> React, webpack , babel, MUI, and tsParticles
 
 ### Key Features <a name="key-features"></a>
 
 - Home page
-- about page
 - resume
 - show cases
 - conatact me
@@ -75,7 +74,7 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Use prime react
+> Add animation to the project
 
 ## 🤝 Contributing <a name="contributing"></a>
 
