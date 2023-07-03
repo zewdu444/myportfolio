@@ -5,7 +5,7 @@
 </div>
 # 🧑‍💻 My Portfolio <a name="about-project"></a>
 
-<p> 😄  This repository serves as my personal portfolio and is developed by React and MUI. It contains information about me, my resume, and my works. 🧑</p>
+<p> 😄  This repository serves as my personal portfolio and developed by React and MUI. It contains information about me, my resume, and my works. 🧑</p>
 
 ## 🛠 Built With <a name="built-with"> </a>
 
@@ -13,7 +13,7 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> React, webpack , babel, MUI, and tsParticles
+> React, Webpack , Babel, MUI, and tsParticles
 
 ### Key Features <a name="key-features"></a>
 
