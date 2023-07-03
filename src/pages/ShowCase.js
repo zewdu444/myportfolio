@@ -142,8 +142,7 @@ function ShowCase() {
 
                 <Chip label="Javascript" color="primary" variant="outlined" sx={{ mb: 1 }} />
                 <Chip label="Webpack" color="primary" variant="outlined" sx={{ mb: 1 }} />
-                <Chip label="HTML5" color="primary" variant="outlined" sx={{ mb: 1 }} />
-                <Chip label="CSS3" color="primary" variant="outlined" sx={{ mb: 1 }} />
+                <Chip label="Tailwind CSS" color="primary" variant="outlined" sx={{ mb: 1 }} />
               </Stack>
             </CardContent>
             <CardActions>
@@ -204,9 +203,8 @@ function ShowCase() {
               >
 
                 <Chip label="React" color="primary" variant="outlined" sx={{ mb: 1 }} />
-                <Chip label="Rudx" color="primary" variant="outlined" sx={{ mb: 1 }} />
+                <Chip label="Redux" color="primary" variant="outlined" sx={{ mb: 1 }} />
                 <Chip label="MUI" color="primary" variant="outlined" sx={{ mb: 1 }} />
-                <Chip label="RapidAPI" color="primary" variant="outlined" sx={{ mb: 1 }} />
               </Stack>
             </CardContent>
             <CardActions>
@@ -269,7 +267,6 @@ function ShowCase() {
                 <Chip label="Vue js" color="primary" variant="outlined" sx={{ mb: 1 }} />
                 <Chip label="Vuex" color="primary" variant="outlined" sx={{ mb: 1 }} />
                 <Chip label="Quasar" color="primary" variant="outlined" sx={{ mb: 1 }} />
-                <Chip label="Firebase" color="primary" variant="outlined" sx={{ mb: 1 }} />
               </Stack>
             </CardContent>
             <CardActions>
@@ -319,9 +316,7 @@ function ShowCase() {
                 }}
                 spacing={1}
               >
-
-                <Chip label="Ruby" color="primary" variant="outlined" sx={{ mb: 1 }} />
-                <Chip label="Ruby on Rails" color="primary" variant="outlined" sx={{ mb: 1 }} />
+                <Chip label="ROR" color="primary" variant="outlined" sx={{ mb: 1 }} />
                 <Chip label="PostgreSQL" color="primary" variant="outlined" sx={{ mb: 1 }} />
                 <Chip label="Rspec" color="primary" variant="outlined" sx={{ mb: 1 }} />
               </Stack>
@@ -384,7 +379,6 @@ function ShowCase() {
 
                 <Chip label="ROR" color="primary" variant="outlined" sx={{ mb: 1 }} />
                 <Chip label="PostgreSQL" color="primary" variant="outlined" sx={{ mb: 1 }} />
-                <Chip label="Rspec" color="primary" variant="outlined" sx={{ mb: 1 }} />
                 <Chip label="Swagger" color="primary" variant="outlined" sx={{ mb: 1 }} />
               </Stack>
             </CardContent>
@@ -447,7 +441,6 @@ function ShowCase() {
 
                 <Chip label="React" color="primary" variant="outlined" sx={{ mb: 1 }} />
                 <Chip label="Redux" color="primary" variant="outlined" sx={{ mb: 1 }} />
-                <Chip label="Redux-Thunk" color="primary" variant="outlined" sx={{ mb: 1 }} />
                 <Chip label="Bootstrap" color="primary" variant="outlined" sx={{ mb: 1 }} />
               </Stack>
             </CardContent>
