@@ -189,8 +189,7 @@ function ShowCase() {
                 Countries information
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                A Mobile web application offers information about countries such as their
-                population, capital city, and flag.
+                A Mobile web application offers information about countries details
               </Typography>
               <Stack
                 direction="row"
