@@ -29,9 +29,19 @@ function Home() {
           <Typography variant="h2" gutterBottom>
             Full Stack Web Developer
           </Typography>
-          <Typography variant="h5" gutterBottom paddingTop="3%" text>
-            I am genuinely enthusiastic in software engineering,
-            particularly full stack web development, cross-platform apps, and data science.
+          <Typography
+            variant="h5"
+            gutterBottom
+            paddingTop="3%"
+            sx={{
+              textAlign: 'justify',
+            }}
+          >
+            Experienced and enthusiastic full-stack web developer adept in Ruby on Rails and React,
+            delivering scalable solutions for enhanced user experiences.
+            Demonstrates agile learning, excelling in remote work and collaboration,
+            in the field of web development and data analysis.
+
           </Typography>
           <Button
             variant="outlined"
@@ -43,6 +53,9 @@ function Home() {
               fontSize: '20px',
               fontWeight: 'bold',
               border: '3px solid',
+            }}
+            onClick={() => {
+              window.open('mailto:zewdu444@gmail.com', '_blank');
             }}
           >
             Hire Me

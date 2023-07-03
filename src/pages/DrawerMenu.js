@@ -23,6 +23,8 @@ import ContactPageIcon from '@mui/icons-material/ContactPage';
 import { useNavigate } from 'react-router-dom';
 import { GitHub, LinkedIn, Twitter } from '@mui/icons-material';
 import { Stack } from '@mui/material';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHandPeace } from '@fortawesome/free-solid-svg-icons';
 
 const drawerWidth = 240;
 
@@ -128,7 +130,7 @@ export default function MiniDrawer({ children }) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h5" noWrap component="div" sx={{ flexGrow: 1 }}>
-            Zewdu Erkyhun
+            ZEWDU ANLEY
           </Typography>
           <Stack direction="row" spacing={1} sx={{ pr: '5px' }}>
             <IconButton
@@ -137,6 +139,7 @@ export default function MiniDrawer({ children }) {
                 color: 'white',
                 size: 'large',
               }}
+              onClick={() => { window.open('https://github.com/zewdu444', '_blank'); }}
             >
               <GitHub />
             </IconButton>
@@ -145,6 +148,7 @@ export default function MiniDrawer({ children }) {
               sx={{
                 color: 'white',
               }}
+              onClick={() => { window.open('https://www.linkedin.com/in/zewdu-anley/', '_blank'); }}
             >
               <LinkedIn />
             </IconButton>
@@ -153,8 +157,18 @@ export default function MiniDrawer({ children }) {
               sx={{
                 color: 'white',
               }}
+              onClick={() => { window.open('https://twitter.com/@zewdu444', '_blank'); }}
             >
               <Twitter />
+            </IconButton>
+            <IconButton
+              aria-label="Twitter"
+              sx={{
+                color: 'white',
+              }}
+              onClick={() => { window.open('https://wellfound.com/u/zewdu-erkyhun', '_blank'); }}
+            >
+              <FontAwesomeIcon icon={faHandPeace} />
             </IconButton>
           </Stack>
         </Toolbar>

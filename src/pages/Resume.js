@@ -87,6 +87,11 @@ function Resume() {
                   Medium
                 </Link>
               </Typography>
+              <Typography variant="a" color="text.secondary" component="div" textAlign="center">
+                <Link href="https://wellfound.com/u/zewdu-erkyhun" target="_blank">
+                  Wellfound
+                </Link>
+              </Typography>
             </CardContent>
           </Card>
         </Stack>
@@ -393,7 +398,7 @@ function Resume() {
                     pr: '5%',
                   }}
                 >
-                  November, 2022 – present
+                  November, 2022 – June , 2023
                 </Typography>
               </Stack>
               <Typography variant="body2" component="div" color="text.secondary" width="50%" pl="5px">
