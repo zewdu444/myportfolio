@@ -222,6 +222,7 @@ function Resume() {
                 independently and via pair programming.
 
               </Typography>
+              <br />
               <Typography component="div" color="text.secondary">
                 <Typography variant="h6" component="span" color="text.secondary">
                   Budget app:  &nbsp;
@@ -233,6 +234,7 @@ function Resume() {
                   - Built with: Ruby on Rails, CSS3, and Render.
                 </Typography>
               </Typography>
+              <br />
               <Typography component="div" color="text.secondary">
                 <Typography variant="h6" component="span" color="text.secondary">
                   Awesome TodoList app:  &nbsp;
@@ -244,6 +246,7 @@ function Resume() {
                   - Built with: VueJS, Quasar, and Firebase.
                 </Typography>
               </Typography>
+              <br />
               <Typography component="div" color="text.secondary">
                 <Typography variant="h6" component="span" color="text.secondary">
                   Countries Information:  &nbsp;
@@ -422,7 +425,7 @@ function Resume() {
                 </Typography>
               </Stack>
               <Typography variant="body2" component="div" color="text.secondary" width="50%" pl="5px">
-                - spent 1300+ hours mastering algorithms, data structures, and full-stack
+                - Spent 1300+ hours mastering algorithms, data structures, and full-stack
                 development while simultaneously developing projects with JavaScript,
                 Ruby On Rais, React, and Redux.
 
