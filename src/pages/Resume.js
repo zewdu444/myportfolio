@@ -204,7 +204,7 @@ function Resume() {
               }}
               >
                 <Typography variant="h6" component="span" color="text.secondary">
-                  Full Stack Web Development Student and Mentor &nbsp;
+                  Full Stack Web Developer &nbsp;
                 </Typography>
                 <Typography
                   variant="body1"
@@ -296,15 +296,16 @@ function Resume() {
                     pr: '5%',
                   }}
                 >
-                  January 2023 – present
+                  January 2023 – Present
                 </Typography>
               </Stack>
               <Typography variant="body2" component="div" color="text.secondary" width="50%" pl="5px">
-                - Mentored junior web developers, providing technical support through code reviews.
+                - Mentoring three junior web developers and providing technical support via Slack.
               </Typography>
               <Typography variant="body2" component="div" color="text.secondary" width="50%" pl="5px">
-                - Proposed improvements to code organization to improve code quality
-                and overall performance.
+                - Assisting three mentees in avoiding common mistakes by providing them with
+                learning guidelines.
+
               </Typography>
 
               <Stack sx={{
@@ -351,10 +352,15 @@ function Resume() {
                 </Typography>
               </Stack>
               <Typography variant="body2" component="div" color="text.secondary" width="50%" pl="5px">
-                - Monitored system performance, availability, and user experience.
+                - Implemented and optimized CMMS software, leading to a 20% increase in
+                productivity.
+
               </Typography>
               <Typography variant="body2" component="div" color="text.secondary" width="50%" pl="5px">
-                - coordinated and distributed all tasks to team members.
+                - Guided cross-functional teams across five sites, providing training and
+                coaching to technicians and maintenance professionals, resulting in improved
+                efficiency and operational effectiveness.
+
               </Typography>
             </CardContent>
           </Card>
@@ -412,11 +418,11 @@ function Resume() {
                     pr: '5%',
                   }}
                 >
-                  November, 2022 – June , 2023
+                  November 2022 – June 2023
                 </Typography>
               </Stack>
               <Typography variant="body2" component="div" color="text.secondary" width="50%" pl="5px">
-                - I spent 1300+ hours mastering algorithms, data structures, and full-stack
+                - spent 1300+ hours mastering algorithms, data structures, and full-stack
                 development while simultaneously developing projects with JavaScript,
                 Ruby On Rais, React, and Redux.
 
