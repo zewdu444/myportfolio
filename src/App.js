@@ -9,8 +9,9 @@ import ShowCase from './pages/ShowCase';
 import Resume from './pages/Resume';
 import Home from './pages/Home';
 import ContactMe from './pages/ContactMe';
-import MiniDrawer from './pages/DrawerMenu';
+// import MiniDrawer from './pages/DrawerMenu';
 import options from './tsconfig/options';
+import DrawerAppBar from './pages/Drawer';
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -59,7 +60,7 @@ function App() {
     <ThemeProvider theme={Theme}>
       <BrowserRouter>
 
-        <MiniDrawer>
+        <DrawerAppBar>
           <Particles
             init={particlesInit}
             loaded={particlesLoaded}
@@ -85,7 +86,7 @@ function App() {
           >
             <LightModeIcon />
           </Fab>
-        </MiniDrawer>
+        </DrawerAppBar>
       </BrowserRouter>
     </ThemeProvider>
 

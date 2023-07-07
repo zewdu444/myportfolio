@@ -1,24 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import {
   Card, Grid, Button,
 } from '@mui/material';
-import { useNavigate } from 'react-router-dom';
 import TeckStack from '../components/TeckStack';
 
 function Home() {
-  const [scrollDown, setScrollDown] = useState(0);
-  const navigate = useNavigate();
-  const handleScroll = (e) => {
-    setScrollDown(scrollDown + e.deltaY);
-    if (scrollDown > 1000) {
-      navigate('/resume');
-    }
-  };
   return (
 
-    <Box sx={{ flexGrow: 1 }} onWheel={handleScroll}>
+    <Box sx={{ flexGrow: 1 }}>
       <Grid
         container
         sx={{
