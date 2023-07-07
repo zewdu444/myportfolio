@@ -11,111 +11,109 @@ function TeckStack() {
     <ImageList
       cols={4}
       gap={4}
-      sx={{
-      }}
     >
       <CardMedia
         sx={{
-          width: '80px',
-          height: '80px',
+          width: '60px',
+          height: '60px',
         }}
         image={html5}
       />
       <CardMedia
         sx={{
-          width: '80px',
-          height: '80px',
+          width: '60px',
+          height: '60px',
         }}
         image={css3}
       />
       <CardMedia
         sx={{
-          width: '80px',
-          height: '80px',
+          width: '60px',
+          height: '60px',
         }}
         image={javascript}
       />
       <CardMedia
         sx={{
-          width: '80px',
-          height: '80px',
+          width: '60px',
+          height: '60px',
         }}
         image={bootstrap}
       />
       <CardMedia
         sx={{
-          width: '80px',
-          height: '80px',
+          width: '60px',
+          height: '60px',
         }}
         image={react}
       />
       <CardMedia
         sx={{
-          width: '80px',
-          height: '80px',
+          width: '60px',
+          height: '60px',
         }}
         image={redux}
       />
       <CardMedia
         sx={{
-          width: '80px',
-          height: '80px',
+          width: '60px',
+          height: '60px',
         }}
         image={vuejs}
       />
       <CardMedia
         sx={{
-          width: '80px',
-          height: '80px',
+          width: '60px',
+          height: '60px',
         }}
         image={python}
       />
       <CardMedia
         sx={{
-          width: '80px',
-          height: '80px',
+          width: '60px',
+          height: '60px',
         }}
         image={django}
       />
       <CardMedia
         sx={{
-          width: '80px',
-          height: '80px',
+          width: '60px',
+          height: '60px',
         }}
         image={jest}
       />
       <CardMedia
         sx={{
-          width: '80px',
-          height: '80px',
+          width: '60px',
+          height: '60px',
         }}
         image={java}
       />
       <CardMedia
         sx={{
-          width: '80px',
-          height: '80px',
+          width: '60px',
+          height: '60px',
         }}
         image={nodejs}
       />
       <CardMedia
         sx={{
-          width: '80px',
-          height: '80px',
+          width: '60px',
+          height: '60px',
         }}
         image={postgresql}
       />
       <CardMedia
         sx={{
-          width: '80px',
-          height: '80px',
+          width: '60px',
+          height: '60px',
         }}
         image={rubyonrails}
       />
       <CardMedia
         sx={{
-          width: '80px',
-          height: '80px',
+          width: '60px',
+          height: '60px',
         }}
         image={webpack}
       />

@@ -1,18 +1,19 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
 import {
-  Card, Grid, Button,
+  Card, Grid, Button, Stack,
 } from '@mui/material';
 import TeckStack from '../components/TeckStack';
 
 function Home() {
   return (
 
-    <Box
+    <Stack
       sx={{
-        flexGrow: 1,
         paddingBottom: '10%',
+        display: 'flex',
+        justifyContent: 'center',
+        paddingLeft: { xs: '0%', sm: '5%' },
       }}
       id="home"
     >
@@ -20,7 +21,6 @@ function Home() {
         container
         sx={{
           paddingTop: '10%',
-          paddingLeft: '5%',
         }}
       >
         <Grid
@@ -29,18 +29,19 @@ function Home() {
           sx={{
             display: 'flex',
             flexDirection: 'column',
-            paddingRight: '5%',
+            paddingRight: '6%',
           }}
         >
           <Typography variant="h2" gutterBottom>
-            Full Stack Web Developer
+            Hello, I am Zewdu
           </Typography>
           <Typography
-            variant="h5"
+            variant="h6"
             gutterBottom
             paddingTop="3%"
             sx={{
-              textAlign: 'justify',
+
+              maxWidth: { xs: '100%', sm: '80%', md: '100%' },
             }}
           >
             Experienced and enthusiastic full-stack web developer adept in Ruby on Rails and React,
@@ -75,16 +76,17 @@ function Home() {
           sx={{
             display: 'flex',
             flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
           }}
         >
           <Card
             sx={{
-              maxWidth: '400px',
-              minWidth: '400px',
-              paddingLeft: '2%',
+              maxWidth: '370px',
+              minWidth: '370px',
+              paddingLeft: '1%',
 
             }}
-            elevation={3}
           >
             <Typography
               gutterBottom
@@ -101,7 +103,7 @@ function Home() {
           </Card>
         </Grid>
       </Grid>
-    </Box>
+    </Stack>
   );
 }
 
