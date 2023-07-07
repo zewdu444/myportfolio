@@ -15,7 +15,8 @@ import Typography from '@mui/material/Typography';
 import { GitHub, LinkedIn, Twitter } from '@mui/icons-material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHandPeace } from '@fortawesome/free-solid-svg-icons';
-import { Stack } from '@mui/material';
+import { Avatar, Stack, Tooltip } from '@mui/material';
+import { zewdu } from '../img';
 
 const drawerWidth = 240;
 
@@ -29,23 +30,38 @@ function DrawerAppBar({ ...props }) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+      <Typography
+        variant="h6"
+        sx={{
+          my: 2,
+          fontStyle: 'italic',
+
+        }}
+      >
+        <Tooltip title="Open Home">
+          <IconButton>
+            <Avatar alt="Zewdu erkyhun" src={zewdu} />
+          </IconButton>
+        </Tooltip>
       </Typography>
       <Divider />
       <List>
         <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemText primary="Trash" />
+          <ListItemButton component="a" href="#simple-list">
+            <ListItemText primary="Resume" />
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
           <ListItemButton component="a" href="#simple-list">
-            <ListItemText primary="Spam" />
+            <ListItemText primary="ShowCase" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton component="a" href="#simple-list">
+            <ListItemText primary="ContactMe" />
           </ListItemButton>
         </ListItem>
       </List>
-
     </Box>
   );
 
@@ -67,10 +83,13 @@ function DrawerAppBar({ ...props }) {
           </IconButton>
           <Typography
             variant="h6"
-            component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            MUI
+            <Tooltip title="Open Home">
+              <IconButton>
+                <Avatar alt="Zewdu erkyhun" src={zewdu} />
+              </IconButton>
+            </Tooltip>
           </Typography>
           <Stack sx={{
             display: {
