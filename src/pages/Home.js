@@ -9,11 +9,17 @@ import TeckStack from '../components/TeckStack';
 function Home() {
   return (
 
-    <Box sx={{ flexGrow: 1 }}>
+    <Box
+      sx={{
+        flexGrow: 1,
+        paddingBottom: '10%',
+      }}
+      id="home"
+    >
       <Grid
         container
         sx={{
-          paddingTop: '12%',
+          paddingTop: '10%',
           paddingLeft: '5%',
         }}
       >

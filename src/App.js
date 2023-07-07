@@ -1,10 +1,10 @@
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Fab from '@mui/material/Fab';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import { useState, useCallback } from 'react';
 import Particles from 'react-particles';
 import { loadFull } from 'tsparticles';
+import { Stack } from '@mui/material';
 import ShowCase from './pages/ShowCase';
 import Resume from './pages/Resume';
 import Home from './pages/Home';
@@ -58,36 +58,33 @@ function App() {
   return (
 
     <ThemeProvider theme={Theme}>
-      <BrowserRouter>
 
-        <DrawerAppBar>
-          <Particles
-            init={particlesInit}
-            loaded={particlesLoaded}
-            options={options}
-          />
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route path="/showcase" element={<ShowCase />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/contactme" element={<ContactMe />} />
-          </Routes>
+      <DrawerAppBar>
+        <Particles
+          init={particlesInit}
+          loaded={particlesLoaded}
+          options={options}
+        />
+        <Stack>
+          <Home />
+          <Resume />
+          <ShowCase />
+          <ContactMe />
+        </Stack>
+        <Fab
+          aria-label="LightMode"
+          onClick={lightHandler}
+          sx={{
 
-          <Fab
-            aria-label="LightMode"
-            onClick={lightHandler}
-            sx={{
+            position: 'fixed',
+            bottom: 16,
+            right: 16,
+          }}
+        >
+          <LightModeIcon />
+        </Fab>
+      </DrawerAppBar>
 
-              position: 'fixed',
-              bottom: 16,
-              right: 16,
-            }}
-
-          >
-            <LightModeIcon />
-          </Fab>
-        </DrawerAppBar>
-      </BrowserRouter>
     </ThemeProvider>
 
   );

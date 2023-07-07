@@ -39,7 +39,7 @@ function DrawerAppBar({ ...props }) {
         }}
       >
         <Tooltip title="Open Home">
-          <IconButton>
+          <IconButton href="#home">
             <Avatar alt="Zewdu erkyhun" src={zewdu} />
           </IconButton>
         </Tooltip>
@@ -47,17 +47,17 @@ function DrawerAppBar({ ...props }) {
       <Divider />
       <List>
         <ListItem disablePadding>
-          <ListItemButton component="a" href="#simple-list">
+          <ListItemButton component="a" href="#resume">
             <ListItemText primary="Resume" />
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
-          <ListItemButton component="a" href="#simple-list">
+          <ListItemButton component="a" href="#showcase">
             <ListItemText primary="ShowCase" />
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
-          <ListItemButton component="a" href="#simple-list">
+          <ListItemButton component="a" href="#contactme">
             <ListItemText primary="ContactMe" />
           </ListItemButton>
         </ListItem>
@@ -86,7 +86,7 @@ function DrawerAppBar({ ...props }) {
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
             <Tooltip title="Open Home">
-              <IconButton>
+              <IconButton href="#home">
                 <Avatar alt="Zewdu erkyhun" src={zewdu} />
               </IconButton>
             </Tooltip>
@@ -105,17 +105,17 @@ function DrawerAppBar({ ...props }) {
             }}
             >
               <ListItem disablePadding>
-                <ListItemButton component="a" href="#simple-list">
+                <ListItemButton component="a" href="#resume">
                   <ListItemText primary="Resume" />
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>
-                <ListItemButton component="a" href="#simple-list">
+                <ListItemButton component="a" href="#showcase">
                   <ListItemText primary="ShowCase" />
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>
-                <ListItemButton component="a" href="#simple-list">
+                <ListItemButton component="a" href="#contactme">
                   <ListItemText primary="ContactMe" />
                 </ListItemButton>
               </ListItem>

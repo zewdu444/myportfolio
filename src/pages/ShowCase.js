@@ -1,27 +1,22 @@
 import {
   Grid, Typography, Button, Card, CardContent, CardActions, Stack, Chip,
 } from '@mui/material';
-import React, { useState } from 'react';
 import RocketIcon from '@mui/icons-material/Rocket';
-import { useNavigate } from 'react-router-dom';
+
 import {
   conference, leaderboard, countries, awesome, budget, relief, rocket, bookstore,
 } from '../img';
 
 function ShowCase() {
-  const [scrollDown, setScrollDown] = useState(0);
-  const navigate = useNavigate();
-  const handleScroll = (e) => {
-    setScrollDown(scrollDown + e.deltaY);
-    if (scrollDown > 2000) {
-      navigate('/contactme', { replace: true });
-    }
-    if (scrollDown < -800) {
-      navigate('/resume', { replace: true });
-    }
-  };
   return (
-    <Stack onWheel={handleScroll}>
+    <Stack
+      sx={{
+        pt: '6%',
+        display: 'flex',
+        flexDirection: 'column',
+      }}
+      id="showcase"
+    >
       <Typography
         gutterBottom
         variant="h4"
