@@ -4,7 +4,7 @@ import {
 import RocketIcon from '@mui/icons-material/Rocket';
 
 import {
-  conference, leaderboard, countries, awesome, budget, relief, rocket, bookstore,
+  conference, countries, awesome, budget, relief, bookstore,
 } from '../img';
 
 function ShowCase() {
@@ -100,68 +100,7 @@ function ShowCase() {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item xs={2} sm={3} md={3}>
-          <Card sx={{
-            maxHeight: {
-              xs: 500, sm: 410, md: 410, xl: 410,
-            },
-            maxWidth: 400,
-            minHeight: 410,
-          }}
-          >
-            <Stack sx={{
-              display: 'flex',
-              flexDirection: 'column',
-            }}
-            >
-              <img src={leaderboard} style={{ maxHeight: '200px', width: '100%' }} alt="Leaderboard" />
-            </Stack>
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Leaderboard
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                A leaderboard website displays scores submitted by different players.
-              </Typography>
-              <Stack
-                direction="row"
-                sx={{
-                  display: 'flex',
-                  flexWrap: 'wrap',
-                  ml: -0.5,
-                  mt: 1,
-                  mb: -2,
-                }}
-                spacing={1}
-              >
 
-                <Chip label="Javascript" color="primary" variant="outlined" sx={{ mb: 1 }} />
-                <Chip label="Webpack" color="primary" variant="outlined" sx={{ mb: 1 }} />
-                <Chip label="Tailwind CSS" color="primary" variant="outlined" sx={{ mb: 1 }} />
-              </Stack>
-            </CardContent>
-            <CardActions>
-              <Button
-                size="small"
-                onClick={() => {
-                  window.open('https://zewdu444.github.io/Leaderboard/');
-                }}
-              >
-                See Live
-
-              </Button>
-              <Button
-                size="small"
-                onClick={() => {
-                  Window.open('https://github.com/zewdu444/Leaderboard');
-                }}
-              >
-                See Source
-
-              </Button>
-            </CardActions>
-          </Card>
-        </Grid>
         <Grid item xs={2} sm={3} md={3}>
           <Card sx={{
             maxHeight: {
@@ -393,67 +332,6 @@ function ShowCase() {
                 }}
               >
                 See API
-
-              </Button>
-            </CardActions>
-          </Card>
-        </Grid>
-        <Grid item xs={2} sm={3} md={3}>
-          <Card sx={{
-            maxHeight: {
-              xs: 500, sm: 410, md: 410, xl: 410,
-            },
-            maxWidth: 400,
-            minHeight: 410,
-          }}
-          >
-            <Stack sx={{
-              display: 'flex',
-              flexDirection: 'column',
-            }}
-            >
-              <img src={rocket} style={{ maxHeight: '200px', width: '100%' }} alt="Rocket" />
-            </Stack>
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Space Travelers Hub
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                A web application for a company that provides commercial and scientific
-                space travel services.
-              </Typography>
-              <Stack
-                direction="row"
-                sx={{
-                  display: 'flex',
-                  flexWrap: 'wrap',
-                  ml: -0.5,
-                  mt: 1,
-                  mb: -2,
-                }}
-                spacing={1}
-              >
-
-                <Chip label="React" color="primary" variant="outlined" sx={{ mb: 1 }} />
-                <Chip label="Redux" color="primary" variant="outlined" sx={{ mb: 1 }} />
-                <Chip label="Bootstrap" color="primary" variant="outlined" sx={{ mb: 1 }} />
-              </Stack>
-            </CardContent>
-            <CardActions>
-              <Button
-                size="small"
-                onClick={() => { window.open('https://space-travelers-dycl.onrender.com/'); }}
-              >
-                See Live
-
-              </Button>
-              <Button
-                size="small"
-                onClick={() => {
-                  window.open('https://github.com/zewdu444/space_travelers');
-                }}
-              >
-                See Source
 
               </Button>
             </CardActions>

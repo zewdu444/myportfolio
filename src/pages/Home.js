@@ -33,7 +33,7 @@ function Home() {
           }}
         >
           <Typography variant="h2" gutterBottom>
-            Hello, I am Zewdu
+            Hello,  I’m  Zewdu
           </Typography>
           <Typography
             variant="h6"
@@ -44,10 +44,11 @@ function Home() {
               maxWidth: { xs: '100%', sm: '80%', md: '100%' },
             }}
           >
-            Experienced and enthusiastic full-stack web developer adept in Ruby on Rails and React,
-            delivering scalable solutions for enhanced user experiences.
-            Demonstrates agile learning, excelling in remote work and collaboration,
-            in the field of web development and data analysis.
+
+            Experienced and passionate full-stack web developer specializing
+            in Ruby on Rails and React. I focus on creating scalable solutions
+            to improve user experiences, with expertise in web development
+            and data analysis.
 
           </Typography>
           <Button

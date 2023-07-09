@@ -46,6 +46,7 @@ function DrawerAppBar({ ...props }) {
       </Typography>
       <Divider />
       <List>
+
         <ListItem disablePadding>
           <ListItemButton component="a" href="#resume">
             <ListItemText primary="Resume" />
@@ -54,6 +55,11 @@ function DrawerAppBar({ ...props }) {
         <ListItem disablePadding>
           <ListItemButton component="a" href="#showcase">
             <ListItemText primary="ShowCase" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton component="a" href="#aboutme">
+            <ListItemText primary="About" />
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
@@ -104,6 +110,7 @@ function DrawerAppBar({ ...props }) {
               flexDirection: 'row',
             }}
             >
+
               <ListItem disablePadding>
                 <ListItemButton component="a" href="#resume">
                   <ListItemText primary="Resume" />
@@ -112,6 +119,11 @@ function DrawerAppBar({ ...props }) {
               <ListItem disablePadding>
                 <ListItemButton component="a" href="#showcase">
                   <ListItemText primary="ShowCase" />
+                </ListItemButton>
+              </ListItem>
+              <ListItem disablePadding>
+                <ListItemButton component="a" href="#aboutme">
+                  <ListItemText primary="About" />
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>

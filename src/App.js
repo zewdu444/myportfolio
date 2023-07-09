@@ -11,6 +11,7 @@ import Home from './pages/Home';
 import ContactMe from './pages/ContactMe';
 import options from './tsconfig/options';
 import DrawerAppBar from './pages/Drawer';
+import AboutMe from './pages/AboutMe';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -68,6 +69,7 @@ function App() {
           <Home />
           <Resume />
           <ShowCase />
+          <AboutMe />
           <ContactMe />
         </Stack>
         <Fab
