@@ -45,7 +45,7 @@ function Home() {
             }}
           >
 
-            Experienced and passionate full-stack web developer specializing
+            Experienced full-stack web developer specializing
             in Ruby on Rails and React. I focus on creating scalable solutions
             to improve user experiences, with expertise in web development
             and data analysis.
