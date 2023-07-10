@@ -22,9 +22,13 @@ function ShowCase() {
         variant="h4"
         component="span"
         textAlign="center"
+        color="primary"
+        sx={{
+          mb: '2%',
+        }}
 
       >
-        My Projects &nbsp;
+        MY PROJECTS &nbsp;
         <RocketIcon
           color="primary"
           sx={{

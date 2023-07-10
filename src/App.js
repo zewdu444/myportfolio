@@ -17,6 +17,21 @@ function App() {
   const [theme, setTheme] = useState('light');
   const Theme = createTheme({
     typography: {
+      h2: {
+        fontWeight: 700,
+        color: theme === 'light' ? '#9155FD' : '#fff',
+      },
+      h5: {
+        fontWeight: 600,
+        color: theme === 'light' ? '#9155FD' : '#fff',
+      },
+      h6: {
+        fontWeight: 600,
+
+      },
+      body1: {
+        fontWeight: 400,
+      },
       fontFamily: [
         'Lato', 'sans-serif',
       ].join(','),
