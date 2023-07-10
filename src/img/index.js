@@ -17,7 +17,6 @@ import vuejs from './vuejs.png';
 import webpack from './webpack.png';
 import zewdu from './zewdu.jpg';
 import conference from './conference.png';
-import leaderboard from './leaderboard.png';
 import bookstore from './bookstore.png';
 import rocket from './rocket.png';
 import awesome from './awesome.png';
@@ -45,7 +44,6 @@ export {
   webpack,
   zewdu,
   conference,
-  leaderboard,
   bookstore,
   rocket,
   awesome,

@@ -151,7 +151,8 @@ function DrawerAppBar({ ...props }) {
                 color: 'white',
                 size: 'large',
               }}
-              onClick={() => { window.open('https://github.com/zewdu444', '_blank'); }}
+              href="https://github.com/zewdu444"
+              target="_blank"
             >
               <GitHub />
             </IconButton>
@@ -160,7 +161,8 @@ function DrawerAppBar({ ...props }) {
               sx={{
                 color: 'white',
               }}
-              onClick={() => { window.open('https://www.linkedin.com/in/zewdu-anley/', '_blank'); }}
+              href="https://www.linkedin.com/in/zewdu-anley/"
+              target="_blank"
             >
               <LinkedIn />
             </IconButton>
@@ -169,7 +171,8 @@ function DrawerAppBar({ ...props }) {
               sx={{
                 color: 'white',
               }}
-              onClick={() => { window.open('https://twitter.com/@zewdu444', '_blank'); }}
+              href="https://twitter.com/@zewdu444"
+              target="_blank"
             >
               <Twitter />
             </IconButton>
@@ -178,7 +181,8 @@ function DrawerAppBar({ ...props }) {
               sx={{
                 color: 'white',
               }}
-              onClick={() => { window.open('https://wellfound.com/u/zewdu-erkyhun', '_blank'); }}
+              href="https://wellfound.com/u/zewdu-erkyhun"
+              target="_blank"
             >
               <FontAwesomeIcon icon={faHandPeace} />
             </IconButton>
