@@ -388,7 +388,7 @@ function Resume() {
               display: 'flex',
               alignSelf: 'center',
               width: '250px',
-              mt: '2%',
+              mt: '4%',
             }}
             endIcon={<DownloadIcon />}
             onClick={() => {

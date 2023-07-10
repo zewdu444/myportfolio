@@ -24,7 +24,8 @@ function ShowCase() {
         textAlign="center"
         color="primary"
         sx={{
-          mb: '2%',
+          mb: '4%',
+
         }}
 
       >
@@ -41,18 +42,22 @@ function ShowCase() {
       <Grid
         container
         spacing={{ xs: 2, md: 3 }}
-        columns={{
-          xs: 2, sm: 6, md: 12, xl: 12,
+        columns={{ xs: 2, sm: 8, lg: 10 }}
+        sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'center',
         }}
       >
 
-        <Grid item xs={2} sm={3} md={3}>
+        <Grid item xs={2} sm={4} lg={3}>
           <Card sx={{
             maxHeight: {
               xs: 500, sm: 410, md: 410, xl: 410,
             },
             maxWidth: 400,
             minHeight: 410,
+            minWidth: 300,
           }}
           >
             <Stack sx={{
@@ -88,6 +93,7 @@ function ShowCase() {
             </CardContent>
             <CardActions>
               <Button
+                variant="contained"
                 size="small"
                 onClick={() => window.open('https://zewdu444.github.io/conference_page/')}
               >
@@ -95,6 +101,7 @@ function ShowCase() {
 
               </Button>
               <Button
+                variant="contained"
                 onClick={() => window.open('https://github.com/zewdu444/conference_page')}
                 size="small"
               >
@@ -104,14 +111,14 @@ function ShowCase() {
             </CardActions>
           </Card>
         </Grid>
-
-        <Grid item xs={2} sm={3} md={3}>
+        <Grid item xs={2} sm={4} lg={3}>
           <Card sx={{
             maxHeight: {
               xs: 500, sm: 410, md: 410, xl: 410,
             },
             maxWidth: 400,
             minHeight: 410,
+            minWidth: 300,
           }}
           >
             <Stack sx={{
@@ -147,6 +154,7 @@ function ShowCase() {
             </CardContent>
             <CardActions>
               <Button
+                variant="contained"
                 size="small"
                 onClick={() => {
                   window.open('https://countries-information-4am6.onrender.com/');
@@ -156,6 +164,7 @@ function ShowCase() {
 
               </Button>
               <Button
+                variant="contained"
                 size="small"
                 onClick={() => {
                   window.open('https://github.com/zewdu444/countries_info');
@@ -167,13 +176,14 @@ function ShowCase() {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item xs={2} sm={3} md={3}>
+        <Grid item xs={2} sm={4} lg={3}>
           <Card sx={{
             maxHeight: {
               xs: 500, sm: 410, md: 410, xl: 410,
             },
             maxWidth: 400,
             minHeight: 410,
+            minWidth: 300,
           }}
           >
             <Stack sx={{
@@ -209,6 +219,7 @@ function ShowCase() {
             </CardContent>
             <CardActions>
               <Button
+                variant="contained"
                 size="small"
                 onClick={() => {
                   window.open('https://spa-todo-2b422.firebaseapp.com/#/');
@@ -220,13 +231,14 @@ function ShowCase() {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item xs={2} sm={3} md={3}>
+        <Grid item xs={2} sm={4} lg={3}>
           <Card sx={{
             maxHeight: {
               xs: 500, sm: 410, md: 410, xl: 410,
             },
             maxWidth: 400,
             minHeight: 410,
+            minWidth: 300,
           }}
           >
             <Stack sx={{
@@ -261,6 +273,7 @@ function ShowCase() {
             </CardContent>
             <CardActions>
               <Button
+                variant="contained"
                 size="small"
                 onClick={() => { window.open('https://budget-app-ai3m.onrender.com/'); }}
               >
@@ -268,6 +281,7 @@ function ShowCase() {
 
               </Button>
               <Button
+                variant="contained"
                 size="small"
                 onClick={() => {
                   window.open('https://github.com/zewdu444/budget_app');
@@ -279,13 +293,14 @@ function ShowCase() {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item xs={2} sm={3} md={3}>
+        <Grid item xs={2} sm={4} lg={3}>
           <Card sx={{
             maxHeight: {
               xs: 500, sm: 410, md: 410, xl: 410,
             },
             maxWidth: 400,
             minHeight: 410,
+            minWidth: 300,
           }}
           >
             <Stack sx={{
@@ -322,14 +337,23 @@ function ShowCase() {
             </CardContent>
             <CardActions>
               <Button
+                variant="contained"
                 size="small"
                 onClick={() => { window.open('https://reliefapp.onrender.com/'); }}
               >
                 See Live
 
               </Button>
-              <Button size="small" onClick={() => { window.open('https://github.com/zewdu444/final-capstone-back-end'); }}>See Source</Button>
               <Button
+                variant="contained"
+                size="small"
+                onClick={() => { window.open('https://github.com/zewdu444/final-capstone-back-end'); }}
+              >
+                See Source
+
+              </Button>
+              <Button
+                variant="contained"
                 size="small"
                 onClick={() => {
                   window.open(' https://counseling-app.onrender.com/api-docs/index.html');
@@ -341,13 +365,14 @@ function ShowCase() {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item xs={2} sm={3} md={3}>
+        <Grid item xs={2} sm={4} lg={3}>
           <Card sx={{
             maxHeight: {
               xs: 500, sm: 410, md: 410, xl: 410,
             },
             maxWidth: 400,
             minHeight: 410,
+            minWidth: 300,
           }}
           >
             <Stack sx={{
@@ -383,6 +408,7 @@ function ShowCase() {
             </CardContent>
             <CardActions>
               <Button
+                variant="contained"
                 size="small"
                 onClick={() => { window.open('https://bookstore-beoz.onrender.com/'); }}
               >
@@ -390,6 +416,7 @@ function ShowCase() {
 
               </Button>
               <Button
+                variant="contained"
                 size="small"
                 onClick={() => { window.open('https://github.com/zewdu444/bookstore'); }}
               >
