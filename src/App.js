@@ -55,6 +55,7 @@ function App() {
       },
       mode: theme,
     },
+
   });
   const lightHandler = () => {
     if (theme === 'light') {

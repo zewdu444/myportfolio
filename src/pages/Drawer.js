@@ -16,9 +16,20 @@ import { GitHub, LinkedIn, Twitter } from '@mui/icons-material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHandPeace } from '@fortawesome/free-solid-svg-icons';
 import { Avatar, Stack, Tooltip } from '@mui/material';
+import useScrollTrigger from '@mui/material/useScrollTrigger';
 import { zewdu } from '../img';
 
 const drawerWidth = 240;
+function ElevationScroll({ children }) {
+  const trigger = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 0,
+  });
+
+  return React.cloneElement(children, {
+    elevation: trigger ? 4 : 0,
+  });
+}
 
 function DrawerAppBar({ ...props }) {
   const { window } = props;
@@ -76,119 +87,120 @@ function DrawerAppBar({ ...props }) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav">
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography
-            variant="h6"
-            sx={{ display: { xs: 'none', sm: 'block' } }}
-          >
-            <Tooltip title="Open Home">
-              <IconButton href="#home">
-                <Avatar alt="Zewdu erkyhun" src={zewdu} />
-              </IconButton>
-            </Tooltip>
-          </Typography>
-          <Stack sx={{
-            display: {
-              xs: 'none',
-              sm: 'flex',
-              margin: 'auto',
-            },
-          }}
-          >
-            <List sx={{
-              display: 'flex',
-              flexDirection: 'row',
-            }}
+      <ElevationScroll>
+        <AppBar component="nav">
+          <Toolbar>
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              edge="start"
+              onClick={handleDrawerToggle}
+              sx={{ mr: 2, display: { sm: 'none' } }}
             >
-
-              <ListItem disablePadding>
-                <ListItemButton component="a" href="#resume">
-                  <ListItemText primary="Resume" />
-                </ListItemButton>
-              </ListItem>
-              <ListItem disablePadding>
-                <ListItemButton component="a" href="#showcase">
-                  <ListItemText primary="ShowCase" />
-                </ListItemButton>
-              </ListItem>
-              <ListItem disablePadding>
-                <ListItemButton component="a" href="#aboutme">
-                  <ListItemText primary="About" />
-                </ListItemButton>
-              </ListItem>
-              <ListItem disablePadding>
-                <ListItemButton component="a" href="#contactme">
-                  <ListItemText primary="ContactMe" />
-                </ListItemButton>
-              </ListItem>
-            </List>
-          </Stack>
-          <Stack
-            direction="row"
-            spacing={1}
-            sx={{
-              pr: '5px',
-              marginLeft: {
-                xs: 'auto',
-                sm: '0px',
+              <MenuIcon />
+            </IconButton>
+            <Typography
+              variant="h6"
+              sx={{ display: { xs: 'none', sm: 'block' } }}
+            >
+              <Tooltip title="Open Home">
+                <IconButton href="#home">
+                  <Avatar alt="Zewdu erkyhun" src={zewdu} />
+                </IconButton>
+              </Tooltip>
+            </Typography>
+            <Stack sx={{
+              display: {
+                xs: 'none',
+                sm: 'flex',
+                margin: 'auto',
               },
             }}
+            >
+              <List sx={{
+                display: 'flex',
+                flexDirection: 'row',
+              }}
+              >
 
-          >
-            <IconButton
-              aria-label="Github"
+                <ListItem disablePadding>
+                  <ListItemButton component="a" href="#resume">
+                    <ListItemText primary="Resume" />
+                  </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                  <ListItemButton component="a" href="#showcase">
+                    <ListItemText primary="ShowCase" />
+                  </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                  <ListItemButton component="a" href="#aboutme">
+                    <ListItemText primary="About" />
+                  </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                  <ListItemButton component="a" href="#contactme">
+                    <ListItemText primary="ContactMe" />
+                  </ListItemButton>
+                </ListItem>
+              </List>
+            </Stack>
+            <Stack
+              direction="row"
+              spacing={1}
               sx={{
-                color: 'white',
-                size: 'large',
+                pr: '5px',
+                marginLeft: {
+                  xs: 'auto',
+                  sm: '0px',
+                },
               }}
-              href="https://github.com/zewdu444"
-              target="_blank"
             >
-              <GitHub />
-            </IconButton>
-            <IconButton
-              aria-label="LinkedIn"
-              sx={{
-                color: 'white',
-              }}
-              href="https://www.linkedin.com/in/zewdu-anley/"
-              target="_blank"
-            >
-              <LinkedIn />
-            </IconButton>
-            <IconButton
-              aria-label="Twitter"
-              sx={{
-                color: 'white',
-              }}
-              href="https://twitter.com/@zewdu444"
-              target="_blank"
-            >
-              <Twitter />
-            </IconButton>
-            <IconButton
-              aria-label="Twitter"
-              sx={{
-                color: 'white',
-              }}
-              href="https://wellfound.com/u/zewdu-erkyhun"
-              target="_blank"
-            >
-              <FontAwesomeIcon icon={faHandPeace} />
-            </IconButton>
-          </Stack>
-        </Toolbar>
-      </AppBar>
+              <IconButton
+                aria-label="Github"
+                sx={{
+                  color: 'white',
+                  size: 'large',
+                }}
+                href="https://github.com/zewdu444"
+                target="_blank"
+              >
+                <GitHub />
+              </IconButton>
+              <IconButton
+                aria-label="LinkedIn"
+                sx={{
+                  color: 'white',
+                }}
+                href="https://www.linkedin.com/in/zewdu-anley/"
+                target="_blank"
+              >
+                <LinkedIn />
+              </IconButton>
+              <IconButton
+                aria-label="Twitter"
+                sx={{
+                  color: 'white',
+                }}
+                href="https://twitter.com/@zewdu444"
+                target="_blank"
+              >
+                <Twitter />
+              </IconButton>
+              <IconButton
+                aria-label="Twitter"
+                sx={{
+                  color: 'white',
+                }}
+                href="https://wellfound.com/u/zewdu-erkyhun"
+                target="_blank"
+              >
+                <FontAwesomeIcon icon={faHandPeace} />
+              </IconButton>
+            </Stack>
+          </Toolbar>
+        </AppBar>
+      </ElevationScroll>
       <Box component="nav">
         <Drawer
           container={container}
